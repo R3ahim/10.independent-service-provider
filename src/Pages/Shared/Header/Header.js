@@ -5,6 +5,7 @@ import { useAuthState } from 'react-firebase-hooks/auth';
 import { Link } from 'react-router-dom';
 import auth from '../../../firebase.init';
 import './Header.css'
+import logo from '../../../Pages/img/log.jpg'
 
 const Header = () => {
    
@@ -18,7 +19,7 @@ const handleSignOut = ()=>{
             <Navbar className=' mx-auto' collapseOnSelect expand="lg" sticky='top' bg="primary" variant="dark">
                 <Container>
                     <Navbar.Brand as={Link} to="/">
-                        <img height={30} src={'https://c8.alamy.com/comp/HGKCMC/tour-guide-pictogram-HGKCMC.jpg'} alt="" />
+                        <img height={30} width={70} src={logo} alt="" />
                     </Navbar.Brand>
                     <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                     <Navbar.Collapse id="responsive-navbar-nav">

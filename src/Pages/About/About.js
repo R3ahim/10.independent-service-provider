@@ -10,9 +10,16 @@ const About = () => {
 
             </div>
             <div className='about'  >
-                <img src={img} style={{ width: '200px' }} alt="" />
-                <h3>The CEO of our car company of APNA CAR</h3>
-                <h5><span>ABOUT: </span>My name is ABDUR RAHIM. i am a student of class ten | i am the ceo of apna car company and beside i am   FRONTEND WEBDEVELOPER </h5>
+                <img src={img} style={{ width: '300' }} alt="" />
+                <h3>ABDUR RHAIM</h3>
+               <p className='text-center mx-5'>
+               hello every one ! I am the ceo of this website. i am talking about me and what is the future of plan of this website.
+               espeaciall i work hard for my client for my rathins and her happyness . next month i will create live addventure who addrventured of this website
+               there will a video part . this video will who was goint to tourist placess there adventure. some of ariticle that peopel commented me.
+
+
+
+               </p>
 
             </div>
         </div>
