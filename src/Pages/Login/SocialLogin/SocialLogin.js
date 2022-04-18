@@ -3,14 +3,16 @@ import google from '../../img/social/google.png'
 import github from '../../img/social/github.png'
 import { useSignInWithGithub, useSignInWithGoogle } from 'react-firebase-hooks/auth';
 import auth from '../../../firebase.init';
-import { useNavigate } from 'react-router-dom';
+import { useLocation, useNavigate } from 'react-router-dom';
 const SocialLogin = () => {
   
     const [signInWithGoogle, user, loading, error] = useSignInWithGoogle(auth);
     const [signInWithGithub, user1, loading1, error1] = useSignInWithGithub(auth);
+    const location = useLocation();
+    let from = location.state?.from?.pathname ||'/';
     const navigate = useNavigate()
-    if(user){
-        navigate('/home')
+    if (user) {
+        navigate(from, { replace: true });
     }
     return (
         <div>

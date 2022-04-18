@@ -3,7 +3,7 @@ import { Button, Form } from 'react-bootstrap';
 import SocialLogin from '../../SocialLogin/SocialLogin';
 import { useCreateUserWithEmailAndPassword, useSendEmailVerification } from 'react-firebase-hooks/auth'
 import auth from '../../../../firebase.init';
-import { useNavigate } from 'react-router-dom';
+import { useLocation, useNavigate } from 'react-router-dom';
 const Register = () => {
 
     const [
@@ -15,6 +15,8 @@ const Register = () => {
       const [sendEmailVerification, sending, error1] = useSendEmailVerification(
         auth
     );
+    const location = useLocation();
+    let from = location.state?.from?.pathname || '/checking';
     const handleSubmit =event=>{
 
        event.preventDefault()
@@ -26,12 +28,10 @@ const Register = () => {
        createUserWithEmailAndPassword(email,password)
       
    }
-   console.log(user);
    const navigate = useNavigate()
-   if(user){
-       navigate('/home')
+   if (user) {
+       navigate(from, { replace: true });
    }
-   
 
    
 

@@ -16,7 +16,7 @@ const Login = () => {
         error,
       ] = useSignInWithEmailAndPassword(auth);
       const location = useLocation();
-      let from = location.state?.from?.pathname || "/";
+      let from = location.state?.from?.pathname ||'/';
     const handleLogin = event=>{
         event.preventDefault();
         const email = event.target.email.value;
