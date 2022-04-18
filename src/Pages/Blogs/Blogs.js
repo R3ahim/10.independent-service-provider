@@ -6,7 +6,7 @@ const Blogs = () => {
         <div>
         <div className='blog-cotnianer'>
             <div className='quest-contianer'>
-                <h1>What other services does firebase provide other than authentication</h1>
+                <h2>What other services does firebase provide other than authentication</h2>
                 <div>
                     <h5>By: <span className='name-blog'>Alex Harry</span> <span className='date-blog'>Mar 23, 2022</span></h5>
                 </div>
