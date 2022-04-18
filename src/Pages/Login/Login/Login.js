@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { useSendEmailVerification, useSignInWithEmailAndPassword } from 'react-firebase-hooks/auth';
+import { useSendEmailVerification, useSendPasswordResetEmail, useSignInWithEmailAndPassword } from 'react-firebase-hooks/auth';
 import google from '../../img/social/google.png'
 import github from '../../img/social/github.png'
 import { Button, Form } from 'react-bootstrap';
@@ -26,6 +26,17 @@ const Login = () => {
         const password = event.target.password.value;
         signInWithEmailAndPassword(email, password)
     }
+    
+    const resetPassword = async () => {
+        const email =const email = event.target.email.value;
+        if (email) {
+            await useSendPasswordResetEmail(email);
+            toast('Sent email');
+        }
+        else{
+            toast('please enter your email address');
+        }
+    }
     const navigate = useNavigate()
     if (user) {
         navigate(from, { replace: true });
@@ -48,13 +59,13 @@ const Login = () => {
                 <Button variant="primary w-50 mx-auto d-block mb-2" type="submit">
                     Login
                 </Button>
-                    <ToastContainer />
+                    
                 <p>New to user <Link to={'/register'} className='text-primary text-decoration-none '>Please Register</Link></p>
-            <p>Forget Password<Link to={'/register'}className='text-primary text-decoration-none '>Reset Password</Link></p>
+                <p>Forget Password? <button className='btn btn-link text-primary pe-auto text-decoration-none' onClick={resetPassword}>Reset Password</button> </p>
            
             </Form>
            
- 
+            <ToastContainer />
 </div>
 
 
