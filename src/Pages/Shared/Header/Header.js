@@ -15,7 +15,7 @@ const handleSignOut = ()=>{
     signOut(auth)
 }
     return (
-        <div className='header-contianer'>
+        <div >
             <Navbar className=' mx-auto' collapseOnSelect expand="lg" sticky='top' bg="primary" variant="dark">
                 <Container>
                     <Navbar.Brand as={Link} to="/">

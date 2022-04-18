@@ -6,10 +6,10 @@ const Blogs = () => {
         <div>
         <div className='blog-cotnianer'>
         <div className='header-info'>
-                <h1 className='text-center'>About us</h1>
-                <p style={{ textAlign: "center", margin: '0 90px' }}>APNA CAR comapny is the biggest and femous or popular car company </p>
+                <h1 className='text-center'>Question and Answer</h1>
+                <p style={{ textAlign: "center", margin: '0 90px' }}>You can see tousands of people quesiotn and answered</p>
                 <p style={{ textAlign: "center", margin: '0 90px' }}>in the world </p>
-
+s
             </div>
             <div className='quest-contianer'>
                 <h2>What other services does firebase provide other than authentication</h2>
@@ -21,7 +21,10 @@ const Blogs = () => {
             </div>
             <h2>Answer: </h2>  <p>Ofcourse! Firebase Provide more other thant authentication Like (<code> Cloud Firebase,Hosting,Storage,RealTime DataBase
                 , Fuction, Development Tools,</code>)
+                <br />
+                <span className='text-success'>two of them</span>
             </p>
+          
            <span className="fs-5 text-primary">Hosting:</span><span>Web hosting is a service that allows organizations and individuals to post a website or web page onto the Internet. </span>
            <br />
            <span className="fs-5 text-primary">Firebase Storege:</span><span>firebase Storege means stored some thing like (vieo, img,text,information,chats, ) etc can sotred in firebase Storage,</span>
@@ -32,7 +35,7 @@ const Blogs = () => {
                 <div>
                     <h5>By: <span className='name-blog'>Aman Datter Wala</span> <span className='date-blog'>Mar 9, 2022</span></h5>
                 </div>
-             <img src={'www.facebook.cojm'} alt="" />
+             <img src={'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQc77NGwnfLIOsJ3tGY43qXpmEb72TRWkqXdA&usqp=CAU'} alt="" />
 
             </div>
             <h2>Answer: </h2>  

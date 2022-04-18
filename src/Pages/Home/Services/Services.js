@@ -9,8 +9,8 @@ const Services = () => {
     return (
         <div>
               <div className='header-info'>
-                <h1 className='text-center'>About us</h1>
-                <p style={{ textAlign: "center", margin: '0 90px' }}>APNA CAR comapny is the biggest and femous or popular car company </p>
+                <h1 className='text-center'>Booking Ticket</h1>
+                <p style={{ textAlign: "center", margin: '0 90px' }}>To buy a Ticket and Enjoy you lesure time </p>
                 <p style={{ textAlign: "center", margin: '0 90px' }}>in the world </p>
 
             </div>

@@ -19,6 +19,7 @@ const Service = ({service} ) => {
       <img style={{height:'150px',width:'100%'}} src={img} className="card-img-top" alt="..."/>
       <div className="card-body">
         <h5 className="card-title">{area}</h5>
+        <h6>comming for Ticket: <span className='text-primary'>{price}</span> $</h6>
         <p className="card-text">{description}</p>
        <button onClick={()=>navigateToServiceDetail(id)} className='btn btn-success'>Explore more</button>
       </div>
