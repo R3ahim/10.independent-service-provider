@@ -26,11 +26,11 @@ const Login = () => {
         const password = event.target.password.value;
         signInWithEmailAndPassword(email, password)
     }
-    
-    const resetPassword = async () => {
-        const email =const email = event.target.email.value;
+    const [sendPasswordResetEmail, sending,] = useSendPasswordResetEmail()
+    const resetPassword = async (event) => {
+        const email = event.target.email.value;
         if (email) {
-            await useSendPasswordResetEmail(email);
+            await sendPasswordResetEmail(email);
             toast('Sent email');
         }
         else{
