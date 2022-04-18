@@ -5,6 +5,12 @@ const Blogs = () => {
     return (
         <div>
         <div className='blog-cotnianer'>
+        <div className='header-info'>
+                <h1 className='text-center'>About us</h1>
+                <p style={{ textAlign: "center", margin: '0 90px' }}>APNA CAR comapny is the biggest and femous or popular car company </p>
+                <p style={{ textAlign: "center", margin: '0 90px' }}>in the world </p>
+
+            </div>
             <div className='quest-contianer'>
                 <h2>What other services does firebase provide other than authentication</h2>
                 <div>

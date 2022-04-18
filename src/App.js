@@ -6,7 +6,7 @@ import Footer from './Pages/Shared/Footer/Footer';
 import Login from './Pages/Login/Login/Login';
 import Register from './Pages/Login/Login/Register/Register';
 import Services from './Pages/Home/Services/Services';
-import Checkout from './Pages/Checkout/Checkout';
+
 import Checking from './Pages/Checkout/Cheking/Checking';
 import Blogs from './Pages/Blogs/Blogs';
 import NotFound from './Pages/NotFound/NotFound';

@@ -16,6 +16,7 @@ const Banner = () => {
            <Carousel activeIndex={index} onSelect={handleSelect}>
       <Carousel.Item>
         <img
+        height={500}
           className="d-block w-100"
           src={nature1}
           alt="First slide"
@@ -27,6 +28,7 @@ const Banner = () => {
       </Carousel.Item>
       <Carousel.Item>
         <img
+        height={500}
           className="d-block w-100"
           src={nature2}
           alt="Second slide"
@@ -39,6 +41,7 @@ const Banner = () => {
       </Carousel.Item>
       <Carousel.Item>
         <img
+        height={500}
           className="d-block w-100"
           src={nature3}
           alt="Third slide"

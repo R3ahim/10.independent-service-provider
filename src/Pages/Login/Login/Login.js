@@ -5,7 +5,7 @@ import google from '../../img/social/google.png'
 import github from '../../img/social/github.png'
 import { Button, Form } from 'react-bootstrap';
 import SocialLogin from '../SocialLogin/SocialLogin';
-import { Link } from 'react-router-dom';
+import { Link, useLocation, useNavigate } from 'react-router-dom';
 import auth from '../../../firebase.init';
 
 const Login = () => {
@@ -15,17 +15,18 @@ const Login = () => {
         loading,
         error,
       ] = useSignInWithEmailAndPassword(auth);
-      const [sendEmailVerification, sending, error1] = useSendEmailVerification(
-        auth
-    );
+      const location = useLocation();
+      let from = location.state?.from?.pathname || "/";
     const handleLogin = event=>{
         event.preventDefault();
         const email = event.target.email.value;
         const password = event.target.password.value;
         signInWithEmailAndPassword(email, password)
     }
-    
-    console.log(user);
+    const navigate = useNavigate()
+    if (user) {
+        navigate(from, { replace: true });
+    }
     return (
 
 
@@ -41,10 +42,7 @@ const Login = () => {
                     <Form.Control name='password' type="password" placeholder="Password" required />
                 </Form.Group>
                 <p></p>
-                <Button onClick={ async () => {
-                    await sendEmailVerification();
-                    alert('Sent email')
-                }} variant="primary w-50 mx-auto d-block mb-2" type="submit">
+                <Button variant="primary w-50 mx-auto d-block mb-2" type="submit">
                     Login
                 </Button>
                 <p>New to user <Link to={'/register'} className='text-primary text-decoration-none '>Please Register</Link></p>
