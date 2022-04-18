@@ -10,9 +10,9 @@ const Footer = () => {
            <h1 className='text-center'>Tourist Guiding</h1>
          
            <p className='text-center'></p>
-           <small className='text-center mx-auto d-block'>Lorem, ipsum. Totam laudantium, unde explicabo consequatur quod corporis.</small>
-           <div className='d-flex mx-auto '>
-            <a href='/www.google.com'> <img  className='mx-3'width={60} src={footer1} alt="" /></a>
+           <small className='text-center mx-auto d-block'>copy right <span className='text-danger'>©</span> by 2002 facebook.com</small>
+           <div className='d-flex  mx-auto '>
+            <a href='/www.google.com'> <img  className='mx-3 img1'width={60} src={footer1} alt="" /></a>
             <a href='/www.google.com'><img  className='mx-3' height={65} width={65} src={footer2} alt="" /></a>
             <a href='/www.google.com'><img  height={65} width={65} src={footer3} alt="" /></a>
            </div>

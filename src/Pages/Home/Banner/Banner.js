@@ -3,6 +3,7 @@ import { Carousel } from 'react-bootstrap';
 import nature1 from '../../img/nature1.jpg'
 import nature2 from '../../img/nature2.jpg'
 import nature3 from '../../img/nature3.jpg'
+import './Banner.css'
 
 const Banner = () => {
    
@@ -22,8 +23,8 @@ const Banner = () => {
           alt="First slide"
         />
         <Carousel.Caption>
-          <h3>First slide label</h3>
-          <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+          <h3 className='next-banner'>YOUR Next Place</h3>
+          <p>Choose Place to go this Weekly.</p>
         </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item>
@@ -35,7 +36,7 @@ const Banner = () => {
         />
 
         <Carousel.Caption>
-          <h3>Second slide label</h3>
+          <h3 >Second slide label</h3>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
         </Carousel.Caption>
       </Carousel.Item>
@@ -48,9 +49,9 @@ const Banner = () => {
         />
 
         <Carousel.Caption>
-          <h3>Third slide label</h3>
+          <h3 >Capture Your Fevourite MoveMent</h3>
           <p>
-            Praesent commodo cursus magna, vel scelerisque nisl consectetur.
+          To visit Some Place Refresh Your mind
           </p>
         </Carousel.Caption>
       </Carousel.Item>

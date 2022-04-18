@@ -1,12 +1,17 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
 .header-contianer{
  width: 80%;
  margin: 0 auto;
 }
 
 @media only screen and (max-width:576px) {
-.header-contianer{
-    width: 100%;
-}
+    .header-contianer{
+        width: 100%;
+    }
 }
 @media only screen and (min-width: 577px) and (max-width: 992px) {
     .header-contianer{

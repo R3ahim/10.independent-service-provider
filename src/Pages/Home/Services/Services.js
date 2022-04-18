@@ -14,7 +14,7 @@ const Services = () => {
                 <p style={{ textAlign: "center", margin: '0 90px' }}>in the world </p>
 
             </div>
-            <div className='row row-cols-1 row-cols-sm-1  row-cols-md-3 g-4'>
+            <div className='row row-cols-1 row-cols-sm-1  row-cols-md-3  mx-auto g-4'>
         {services.map(service=><Service
         key={service.id}
         service={service}

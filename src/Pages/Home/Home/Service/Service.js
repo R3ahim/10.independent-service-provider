@@ -1,8 +1,7 @@
 
 import React, { createContext, useTransition } from 'react';
 import { useNavigate } from 'react-router-dom';
-
-
+import './Service.css'
  const Ring = createContext('1')
   
 const Service = ({service} ) => {
@@ -14,8 +13,8 @@ const Service = ({service} ) => {
     return (
        
       
-  <div className="col " >
-    <div className="card w-75" >
+  <div className="col col-widht" >
+    <div className="card w-75 w " >
       <img style={{height:'150px',width:'100%'}} src={img} className="card-img-top" alt="..."/>
       <div className="card-body">
         <h5 className="card-title">{area}</h5>
