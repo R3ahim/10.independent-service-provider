@@ -10,6 +10,7 @@ import auth from '../../../firebase.init';
 import { ToastContainer, toast } from 'react-toastify';
 
   import 'react-toastify/dist/ReactToastify.css';
+
 const Login = () => {
     const [
         signInWithEmailAndPassword,
@@ -47,6 +48,7 @@ const Login = () => {
                 <Button variant="primary w-50 mx-auto d-block mb-2" type="submit">
                     Login
                 </Button>
+                    <ToastContainer />
                 <p>New to user <Link to={'/register'} className='text-primary text-decoration-none '>Please Register</Link></p>
             <p>Forget Password<Link to={'/register'}className='text-primary text-decoration-none '>Reset Password</Link></p>
            

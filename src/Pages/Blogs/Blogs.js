@@ -46,7 +46,7 @@ s
      
            <sapn className={'text-primary fs-3'}>Authentication:</sapn>:firebase authentication to know about your identity .  Firebase authentication is a service provided by firebase which helps you to build the user authentication system for mobile/web application. It comes with the basic lifecycle methods like Login, Logout, Signup, reset password etc.;
         <br />
-        <span className="text-primary fs-3">Authorization</span> Displays an element as an inline-level block container. You CAN set height and width values.. It's essentially the same thing as inline, except that you can set height and width values.nline-block allows to set a width and height on the element. Also, with display: inline-block , the top and bottom margins/paddings are respected, but with display: inline they are not;  below top img there is exapme of inline-block element;
+        <span className="text-primary fs-3">Authorization</span> Authorzation means to user some thin do in this webiste permission;
         <br />
            
             </p>
