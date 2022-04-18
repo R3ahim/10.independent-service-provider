@@ -16,7 +16,7 @@ const Blogs = () => {
                 <div>
                     <h5>By: <span className='name-blog'>Alex Harry</span> <span className='date-blog'>Mar 23, 2022</span></h5>
                 </div>
-                <img src={'https://www.tristatetechnology.com/tristate-website/blog/wp-content/uploads/2019/06/firebase11.jpg'} alt="" />
+                <img className='blog-img' src={'https://www.tristatetechnology.com/tristate-website/blog/wp-content/uploads/2019/06/firebase11.jpg'} alt="" />
 
             </div>
             <h2>Answer: </h2>  <p>Ofcourse! Firebase Provide more other thant authentication Like (<code> Cloud Firebase,Hosting,Storage,RealTime DataBase
