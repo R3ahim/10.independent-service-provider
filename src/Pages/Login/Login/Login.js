@@ -7,7 +7,9 @@ import { Button, Form } from 'react-bootstrap';
 import SocialLogin from '../SocialLogin/SocialLogin';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 import auth from '../../../firebase.init';
+import { ToastContainer, toast } from 'react-toastify';
 
+  import 'react-toastify/dist/ReactToastify.css';
 const Login = () => {
     const [
         signInWithEmailAndPassword,
